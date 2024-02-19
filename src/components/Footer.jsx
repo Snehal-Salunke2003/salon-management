@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Contact from "./Contact";
 
-function Footer(props) {
+function Footer() {
   return (
       <div className='footer'>
         <div className='container'>

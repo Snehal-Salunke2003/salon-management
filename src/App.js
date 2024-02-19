@@ -1,4 +1,4 @@
-import {Fragment, React,useState} from "react";
+import  React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -13,11 +13,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   const placeId = 'ChIJT9asRZnr3TsRxKZKCg1P3c4';
   const apiKey = 'AIzaSyDtlzsuse0KN0q1DqNadm_6H9rP3RUk2Ss';
-
-  // const [showContact,setContact]=useState(false);
-  // function handleClick(){
-  //   setContact(true);
-  // }
   return (
     <Router>
     <div className="App">
