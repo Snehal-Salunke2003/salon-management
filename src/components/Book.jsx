@@ -22,9 +22,12 @@ function Book(){
     <input type="checkbox" name="Hairstyle" id="Hairstyle" /><label htmlFor="Hairstyle">Hairstyle</label><br />
     <input type="checkbox" name="Makeup" id="Makeup" /><label htmlFor="Makeup">Makeup</label><br />
     </div>
+    <label htmlFor="Date">Select date:</label>
+    <input type="date" name="date" id="date" />
 
     <label htmlFor="Time">Select time:</label>
-    <input type="time" name="date-time" id="date-time" />
+    <input type="time" name="time" id="time" />
+    
     <input type="submit" value="Submit" />
    </form>
     </div>

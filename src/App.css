@@ -367,3 +367,7 @@ input,select{
 input[type="submit"]{
   width:150px;
 }
+#time,#date{
+  width:140px;
+  margin:20px;
+}
