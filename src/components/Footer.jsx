@@ -14,7 +14,7 @@ function Footer() {
           </div>
           <div>
             <ul style={{listStyleType:"none"}}>
-              <li>Timings</li><br />
+              <li><Link to="/timings">Timings</Link></li><br />
               <li>Manage Cookies</li><br />
               <li>FAQ's</li>
             </ul>
