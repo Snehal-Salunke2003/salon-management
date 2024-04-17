@@ -21,9 +21,9 @@ function Footer() {
           </div>
           <div>
             <ul style={{listStyleType:"none"}}>
-              <li>Instagram</li><br />
-              <li>Twitter</li><br />
-              <li>Facebook</li>
+              <li><a href="https://www.instagram.com/sl_salon_?igsh=MXdkNzQ5bG53b2Fmbw==">Instagram</a></li><br />
+              <li><a href="https://youtube.com/@slsalon8123?si=M990gN-a5uOT4b3N">You Tube</a></li><br />
+              <li><a href="https://www.facebook.com/shantaram.jadhav.1">Facebook</a></li>
             </ul>
           </div>
           <div style={{gridColumn:"span 3"}}>
