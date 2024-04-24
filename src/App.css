@@ -370,8 +370,11 @@ input,select{
 }
 input[type="submit"]{
   width:150px;
+  background:radial-gradient(circle at center,#B8860B,#FFD700);
+  color:white;
 }
 #time,#date{
   width:140px;
   margin:20px;
 }
+

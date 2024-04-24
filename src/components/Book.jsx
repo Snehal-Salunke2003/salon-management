@@ -4,6 +4,10 @@ function Book() {
   const handleSubmit = (event) => {
     event.preventDefault(); 
   
+    // Retrieve existing data from local storage or initialize an empty array
+    const existingData = JSON.parse(localStorage.getItem('formDataList')) || [];
+  
+    // Extract form data
     const formData = {
       name: event.target.name.value,
       email: event.target.email.value,
@@ -21,9 +25,14 @@ function Book() {
       date: event.target.date.value,
       time: event.target.time.value,
     };
+  
+    // Append new form data to existing data
+    const updatedData = [...existingData, formData];
 
-    const jsonData = JSON.stringify(formData);
-    localStorage.setItem('formData', jsonData);
+    // Store the updated list in local storage
+    localStorage.setItem('formDataList', JSON.stringify(updatedData));
+  
+    // Reset the form after submission
     event.target.reset();
   };
 
@@ -31,7 +40,7 @@ function Book() {
     <>
       <div className='background'>Book</div>
       <div className='info'>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} method='post'>
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" placeholder='Enter full name' /><br />
           <label htmlFor="email">Email</label>
@@ -56,7 +65,7 @@ function Book() {
           <label htmlFor="time">Select time:</label>
           <input type="time" name="time" id="time" />
           
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" className='submit'/>
         </form>
       
       </div>
